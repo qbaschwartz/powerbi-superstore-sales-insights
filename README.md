@@ -1,4 +1,4 @@
-# 📊 Retail Sales & Profit Insights — Power BI Dashboard
+# Retail Sales & Profit Insights — Power BI Dashboard
 
 **Repository:** `powerbi-superstore-sales-insights`  
 **Author:** Kuba Schwartz  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project is an end-to-end Power BI solution built using the popular **Superstore** retail dataset.  
 It demonstrates professional skills in:
@@ -21,7 +21,7 @@ The dashboard focuses on **sales performance**, **profitability**, **category tr
 
 ---
 
-# 🧹 1. Data Preparation (Power Query)
+# 1. Data Preparation (Power Query)
 
 ### ✔ Completed Cleaning Steps:
 
@@ -41,7 +41,7 @@ The dashboard focuses on **sales performance**, **profitability**, **category tr
 
 ---
 
-# 🧱 2. Data Model (Star Schema)
+# 2. Data Model (Star Schema)
 
 **To be completed in Day 2:**
 
@@ -62,7 +62,7 @@ A dedicated Date Table will be added and marked as the official Power BI date ta
 
 ---
 
-# 📐 3. DAX Measures (Planned)
+# 3. DAX Measures (Planned)
 
 - `Total Sales`
 - `Total Profit`
@@ -76,7 +76,7 @@ A dedicated Date Table will be added and marked as the official Power BI date ta
 
 ---
 
-# 📊 4. Dashboard Pages (Planned)
+# 4. Dashboard Pages (Planned)
 
 - **Executive Overview**
 - **Product Performance**
@@ -87,7 +87,7 @@ Each page will include clean visuals, consistent formatting, business storytelli
 
 ---
 
-# 📂 Folder Structure
+# Folder Structure
 powerbi-superstore-sales-insights/
 │
 ├── data/ # Superstore dataset (CSV)
@@ -99,7 +99,7 @@ powerbi-superstore-sales-insights/
 
 ---
 
-# 📝 Project Log
+# Project Log
 
 ## **Day 1 — Data Cleaning Completed**
 - Created project folder structure  
@@ -113,7 +113,7 @@ powerbi-superstore-sales-insights/
 
 ---
 
-# 🚀 How to Use
+# How to Use
 
 1. Download the `.pbix` file from the `/pbix` folder  
 2. Open it in **Power BI Desktop**  
@@ -122,7 +122,7 @@ powerbi-superstore-sales-insights/
 
 ---
 
-# ⭐ Status
+# Status
 
 **Day 1 complete — Data cleaned & ready for modeling.**  
 Day 2 will introduce relationships, a date table, and the first DAX measures.
