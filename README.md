@@ -2,7 +2,7 @@
 ![Power BI](https://img.shields.io/badge/Power%20BI-Data%20Analytics-F2C811?style=flat&logo=powerbi&logoColor=black)
 
 **Repository:** `powerbi-superstore-sales-insights`  
-**Author:** Kuba Schwartz  
+**Author:** Jakob Schwartz  
 **Tools:** Power BI, Power Query, DAX, Data Modeling, CSV data
 
 ---
