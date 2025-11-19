@@ -1,90 +1,45 @@
-# 📘 Project Log — Power BI Superstore Sales Insights
+# Project Log
 
-This document tracks the day-by-day progress of the **Retail Sales & Profit Insights — Power BI Dashboard** project.  
-The goal is to show clear, structured development — useful for recruiters, portfolio transparency, and personal learning.
+## Day 1 — Data Cleaning Completed
+- Created project folder structure  
+- Imported Superstore CSV  
+- Configured Power Query  
+- Cleaned and validated all fields  
+- Parsed date formats using correct locale  
+- Standardized all column names  
+- Prepared data for modeling
 
----
-
-## Day 1 — Data Preparation & Setup (Completed)
-
-### ✔ Project Setup
-- Created full project folder structure:
-  - `/data`
-  - `/pbix`
-  - `/assets`
-  - `/docs`
-- Added the **Superstore CSV dataset** to `/data`
-- Created Power BI file: `Superstore_Dashboard.pbix`
-
-### Power Query Data Cleaning
-- Loaded dataset into Power Query
-- Corrected all data types
-- Parsed dates using **Locale: English (United States)**  
-  (Dataset uses `MM.DD.YYYY` with dots)
-- Set `Postal Code` to **Text** (prevented leading-zero losses)
-- Ensured numeric fields (`Sales`, `Profit`, `Discount`) use **Decimal Number**
-- Standardized all column names (PascalCase)
-- Performed error check (0 errors found)
-- Marked redundant columns for later removal:
-  - `Row ID`
-  - `Country` (always “United States”)
-
-### Status End of Day 1
-Dataset is cleaned, validated, and prepared for dimensional modeling.
-
-### Next Steps
-- Build dimension tables:
-  - Dim_Customer
-  - Dim_Product
-  - Dim_Geography
-  - Dim_Date
-- Create Fact table (Fact_Orders)
-- Establish star schema relationships
-- Add & configure Date Table for time intelligence
+**Next step (Day 2):** Begin dimensional modeling
 
 ---
 
-## Day 2 — Data Modeling (Planned)
-- Create Date Table (Power BI or DAX)
-- Define dimensions & fact table
-- Set up 1:* relationships
-- Mark Date Table
-- Validate model with basic DAX measure (Total Sales)
+## Day 2 — Dimensional Model & First DAX Measures
+- Built all dimension tables (Customer, Product, Geography, State, Date)  
+- Prepared Fact_Orders table from the Superstore dataset  
+- Established full Star Schema (1:* relationships, single-direction)  
+- Organized Model View for clarity and documentation  
+- Added initial core measures:  
+  - Total Sales  
+  - Total Profit  
+  - Profit Margin %  
+- Validated model and measures using test visuals (cards + slicers)  
+- Ensured Date Table is marked as official Date Table for time intelligence
+
+**Next step (Day 3):**  
+Time Intelligence measures (YoY, MoM, Rolling 12M, YTD/MTD) and first dashboard visual layouts
 
 ---
 
-## Day 3 — DAX Measures (Planned)
-- Core metrics:
-  - Total Sales
-  - Total Profit
-  - Profit Margin %
-- Time intelligence:
-  - YoY Sales
-  - MoM Sales
-- Category ranking & Top-N measures
+# How to Use
+
+1. Download the `.pbix` file from `/pbix`  
+2. Open in **Power BI Desktop**  
+3. Refresh data (CSV is included)  
+4. Explore dashboard pages and measures  
 
 ---
 
-## Day 4 — Dashboard Development (Planned)
-- Layout setup (Executive Overview)
-- Add visuals:
-  - KPI cards
-  - Trend lines
-  - Category breakdown
-  - Product performance
-- Apply consistent theme & formatting
+# Status
 
----
-
-## Day 5 — Finalization (Planned)
-- Polish visuals
-- Add bookmarks/navigation (optional)
-- Export images for GitHub
-- Update README.md
-- Record project summary
-
----
-
-# Project Status
-**Day 1 completed.**  
-The dataset is fully cleaned and ready for modeling.
+**Day 2 complete — Dimensional model completed and core measures added.**  
+Ready to proceed with Time Intelligence and dashboard visuals on Day 3.
