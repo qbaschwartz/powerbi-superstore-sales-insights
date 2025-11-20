@@ -3,43 +3,38 @@
 ## Day 1 — Data Cleaning Completed
 - Created project folder structure  
 - Imported Superstore CSV  
-- Configured Power Query  
-- Cleaned and validated all fields  
-- Parsed date formats using correct locale  
-- Standardized all column names  
-- Prepared data for modeling
+- Cleaned all fields in Power Query  
+- Corrected date formats using locale  
+- Removed redundant columns  
+- Data validated and ready for modeling
 
-**Next step (Day 2):** Begin dimensional modeling
-
----
-
-## Day 2 — Dimensional Model & First DAX Measures
-- Built all dimension tables (Customer, Product, Geography, State, Date)  
-- Prepared Fact_Orders table from the Superstore dataset  
-- Established full Star Schema (1:* relationships, single-direction)  
-- Organized Model View for clarity and documentation  
-- Added initial core measures:  
-  - Total Sales  
-  - Total Profit  
-  - Profit Margin %  
-- Validated model and measures using test visuals (cards + slicers)  
-- Ensured Date Table is marked as official Date Table for time intelligence
-
-**Next step (Day 3):**  
-Time Intelligence measures (YoY, MoM, Rolling 12M, YTD/MTD) and first dashboard visual layouts
+**Next step:** Build dimensional model
 
 ---
 
-# How to Use
+## Day 2 — Dimensional Model & Base Measures Completed
+- Created Dim_Customer / Dim_Product / Dim_Geography / Dim_State  
+- Created Dim_Date and marked as official Date Table  
+- Prepared Fact_Orders  
+- Established complete Star Schema (1:*)  
+- Added core DAX measures (Sales, Profit, Margin)  
+- Built initial KPI visuals and slicers
 
-1. Download the `.pbix` file from `/pbix`  
-2. Open in **Power BI Desktop**  
-3. Refresh data (CSV is included)  
-4. Explore dashboard pages and measures  
+**Next step:** Time Intelligence + Trend visuals
 
 ---
 
-# Status
+## Day 3 — Time Intelligence & Trend Visuals
+- Added all Time Intelligence DAX measures: YTD, MTD, YoY, YoY %, Rolling 12M  
+- Built Sales Rolling 12M vs Total Sales  
+- Built Profit Rolling 12M vs Total Profit  
+- Started professional formatting (dark theme, line styling, axes cleanup)  
+- Slicer group established (Date, Year, State, Category)
 
-**Day 2 complete — Dimensional model completed and core measures added.**  
-Ready to proceed with Time Intelligence and dashboard visuals on Day 3.
+**Next step (Day 4):**  
+- Complete visual formatting (titles, legends, alignment)  
+- Finalize Page 1 layout  
+- Export dashboard images for GitHub  
+- Prepare insights section for README
+
+---
