@@ -9,105 +9,118 @@ Tools: Power BI, Power Query, DAX, Star Schema, Time Intelligence
 
 ## 1. Overview
 
-This project is an end-to-end Power BI solution built on the popular **Superstore** retail dataset.  
+This project is a complete end-to-end Power BI solution built on the popular **Superstore** retail dataset.  
 It demonstrates:
 
 - Professional data cleaning in Power Query  
 - A clean **Star Schema** dimensional model  
 - Custom DAX measures including **Time Intelligence**  
-- KPI card design, trend visuals, and slicers  
-- Business-focused insights for sales & profit performance  
+- KPI cards, trend visuals, slicers, and page layout design  
+- Business-focused insights on sales, profitability, and performance trends  
 
-The dashboard highlights trends in **Total Sales**, **Profit**, **Margin**, **YoY changes**, and **Rolling 12-Month performance**.
+The dashboard highlights:
+
+- **Total Sales**
+- **Total Profit**
+- **Profit Margin %**
+- **YoY %**
+- **Rolling 12-Month Trends**
+- **Category, State & Date slicers**
 
 ---
 
-## 2. Data Preparation (Completed)
+## 2. Final Dashboard (Page 1)
 
-Data cleaning steps included:
+### 📊 Executive Overview  
+Fully formatted dark mode dashboard with KPI cards, date/category/state slicers, and two trend visuals.
 
-- Corrected all data types  
-- Parsed US-format dates using Locale EN-US  
-- Standardized naming convention (PascalCase)  
-- Ensured Postal Code stored as text  
-- Removed redundant fields (e.g., Row ID, Country)  
-- Validated dataset for errors (none remaining)
+![Dashboard Page 1](assets/dashboard_01.png)
 
 ---
 
 ## 3. Data Model (Star Schema)
 
-The following dimension tables were created:
+A fully normalized star schema was created for clean modeling and accurate Time Intelligence.
 
-- **Dim_Customer**  
-- **Dim_Product**  
-- **Dim_Geography**  
-- **Dim_State**  
+![Data Model](assets/data_model.png)
+
+### Dimension Tables
 - **Dim_Date**
+- **Dim_Customer**
+- **Dim_Product**
+- **Dim_State**
+- **Dim_Geography**
 
-Main fact table:
-
+### Fact Table
 - **Fact_Orders**
 
-Relationships:
-
+### Relationships
 - Customer ID → Dim_Customer  
 - Product ID → Dim_Product  
-- State → Dim_State  
-- City/Region → Dim_Geography  
 - Order Date → Dim_Date  
+- State → Dim_State  
+- Region/City → Dim_Geography  
 
-Dim_Date was marked as the official date table for accurate Time Intelligence.
-
----
-
-## 4. DAX Measures (Completed so far)
-
-- Total Sales  
-- Total Profit  
-- Profit Margin %  
-- Sales YTD  
-- Sales MTD  
-- Sales YoY  
-- Sales YoY %  
-- Sales Rolling 12M  
-- Profit Rolling 12M  
-- Profit YoY  
-
-More analytical measures will be added on upcoming dashboard pages.
+**Dim_Date** is marked as the official Date Table.
 
 ---
 
-## 5. Dashboard Pages (In Progress)
+## 4. DAX Measures
 
-### Page 1 — Executive Overview
-Includes:
+### Base Measures
+- `Total Sales`
+- `Total Profit`
+- `Profit Margin %`
 
-- KPI cards (Sales, Profit, Margin, YoY %, YTD, MTD)  
-- Sales over Time (Total Sales + Rolling 12M)  
-- Profit over Time (Total Profit + Rolling 12M)  
-- Slicers: Date, Year, Category, State  
+### Time Intelligence Measures
+- `Sales YTD`
+- `Sales MTD`
+- `Sales YoY`
+- `Sales YoY %`
+- `Sales Rolling 12M`
+- `Profit Rolling 12M`
+- `Profit YoY`
 
-Next:  
-- Page layout refinement  
-- Additional trend visuals  
-- Exporting assets for GitHub preview
+These measures power the trend visualization and KPI cards.
+
+---
+
+## 5. Dashboard Structure
+
+### Page 1 — Executive Overview  
+Contains:
+
+- KPI cards (Sales, Profit, Margin, YoY %, YTD, MTD)
+- Sales Rolling 12M vs Total Sales
+- Profit Rolling 12M vs Total Profit
+- Fully formatted axes, legends, colors, and layout
+- Slicers: Date, Year, State, Category
+
+More pages (Product performance, Segments, Profit Drivers) are planned for future expansion.
 
 ---
 
 ## 6. Folder Structure
 powerbi-superstore-sales-insights/
 │
-├── data/ # Superstore dataset (CSV)
-├── pbix/ # Power BI dashboard
-├── docs/ # Documentation & logs
-├── assets/ # Exported dashboard images
+├── data/ # Superstore CSV dataset
+├── pbix/ # Power BI dashboard file
+├── docs/ # Project logs & documentation
+├── assets/ # Screenshots for README
 └── README.md # Project documentation
 
 ---
 
-## Status
+## 7. Status
 
-**Day 3 in progress — Time Intelligence completed, Trend visuals added.**  
-Next step: finish formatting, finalize Page 1 layout, export visuals for GitHub.
+**✔ Page 1 complete — fully formatted & ready for portfolio**  
+**Next steps:**
+
+- Add Page 2 (Product Performance)
+- Add Page 3 (Customer & Segment Insights)
+- Add Product Profitability KPIs
+- Prepare short insight text for GitHub & LinkedIn post
+
+---
+
 
